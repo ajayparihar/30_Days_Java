@@ -7,6 +7,7 @@ import java.util.concurrent.*;
 import java.util.function.*;
 import java.util.regex.*;
 import java.util.stream.*;
+
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
@@ -22,11 +23,11 @@ class Result {
      */
 
     public static void solve(double meal_cost, int tip_percent, int tax_percent) {
-        long total=0;
-        double tip,tax;
-        tip=((tip_percent*meal_cost)/100);
-        tax=((tax_percent*meal_cost)/100);
-        total=Math.round(tip+tax+meal_cost);
+        long total = 0;
+        double tip, tax;
+        tip = ((tip_percent * meal_cost) / 100);
+        tax = ((tax_percent * meal_cost) / 100);
+        total = Math.round(tip + tax + meal_cost);
         System.out.println(total);
 
     }
